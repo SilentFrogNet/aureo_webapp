@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aureo - Money Manager</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Technoprobe</title>
 </head>
+<html>
 
 <body>
-	<noscript>You need to enable Javascript to run this application.</noscript>
-    <div id="app"></div>
-    <script src="App.ts" type="text/javascript"></script>
+  <div id="root"></div>
+  <script src="index.tsx"></script>
+  <script>
+    window.init({
+      instanceName: "instance1",
+      element: document.getElementById("root"),
+      // optional arguments
+      extraArgs: {
+        router: {
+          basePath: ''
+        },
+      }
+    })
+  </script>
 </body>
 
 </html>
